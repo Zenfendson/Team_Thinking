@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=SCL Pin=R26-1
+Removed Pin From Net: NetName=SDA Pin=R27-1
+Removed Pin From Net: NetName=3V3 Pin=R32-2
+Removed Pin From Net: NetName=3V3 Pin=R35-2
+Removed Pin From Net: NetName=SCL Pin=TP17-1
+Removed Pin From Net: NetName=SDA Pin=TP19-1
+Removed Pin From Net: NetName=3V3 Pin=TP20-1
+Add Net: Net with name "GND" already exists
+Add Net: Net with name "GND" already exists
+Add Net: Net with name "SCL" already exists
+Add Net: Net with name "SDA" already exists
+Added Pin To Net: NetName=VCC Pin=R32-2
+Added Pin To Net: NetName=VCC Pin=R35-2
+Added Pin To Net: NetName=VCC Pin=TP20-1
+Added Net: Name=VCC

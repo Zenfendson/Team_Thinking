@@ -1,0 +1,571 @@
+Protel Design System Design Rule Check
+PCB File : D:\Github\ESE516_A2\ESE516_PCB.PcbDoc
+Date     : 2022/2/23
+Time     : 3:05:32
+
+ERROR : More than 500 violations detected, DRC was stopped
+
+Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+   Violation between Short-Circuit Constraint: Between Pad C30-1(2445mil,86.457mil) on Top Layer And Pad FD1-(2476mil,68mil) on Top Layer Location : [X = 3143.247mil][Y = 4896.523mil]
+   Violation between Short-Circuit Constraint: Between Pad C31-1(2668.457mil,137mil) on Top Layer And Pad FD2-(2673mil,111mil) on Top Layer Location : [X = 3351.035mil][Y = 4941.253mil]
+   Violation between Short-Circuit Constraint: Between Pad L2-1(2489.606mil,716mil) on Top Layer And Pad TP21-1(2438mil,777mil) on Top Layer Location : [X = 3126.139mil][Y = 5575.593mil]
+Rule Violations :3
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net GND Between Pad B1-4(1893.386mil,492mil) on Top Layer And Pad TP25-1(2438mil,472mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C29-2(504mil,524.866mil) on Top Layer And Pad C10-1(533.248mil,620.858mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C1-1(409.661mil,1549.716mil) on Top Layer And Via (431.315mil,1712.567mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C20-1(1732.688mil,1597.866mil) on Top Layer And Pad C21-1(1963.688mil,1597.866mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (1680mil,1873.604mil) from Top Layer to Bottom Layer And Pad C20-1(1732.688mil,1597.866mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net 6V_out Between Pad C20-2(1803.555mil,1597.866mil) on Top Layer And Pad C21-2(2034.555mil,1597.866mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net 6V_out Between Pad C20-2(1803.555mil,1597.866mil) on Top Layer And Via (1890.151mil,1850.151mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C2-1(254.543mil,2112mil) on Top Layer And Pad J1-11(317.536mil,2197.48mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net 6V_out Between Pad C21-2(2034.555mil,1597.866mil) on Top Layer And Pad R22-1(5696mil,99.599mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C23-1(2443mil,563.504mil) on Top Layer And Pad C22-1(2673mil,563.504mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetC22_2 Between Pad U5-10(1571.142mil,2011.228mil) on Top Layer And Pad C22-2(2673mil,626.496mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad TP21-1(2438mil,777mil) on Top Layer [Unplated] And Pad C23-1(2443mil,563.504mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad TP25-1(2438mil,472mil) on Top Layer [Unplated] And Pad C23-1(2443mil,563.504mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetC23_2 Between Pad R17-1(1297.008mil,2026.929mil) on Top Layer And Pad C23-2(2443mil,626.496mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C24-1(3743mil,1241.504mil) on Top Layer And Pad C25-1(4166.567mil,1293mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C26-2(2958.433mil,1293mil) on Top Layer And Pad C24-1(3743mil,1241.504mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C24-1(3743mil,1241.504mil) on Top Layer And Pad TP3-1(3840mil,181mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net VUSB Between Pad C24-2(3743mil,1304.496mil) on Top Layer And Pad TP1-1(4070mil,181mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net VUSB Between Pad U6-13(1450.374mil,1583.18mil) on Top Layer And Pad C24-2(3743mil,1304.496mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C25-1(4166.567mil,1293mil) on Top Layer And Pad TP13-1(5049mil,1606mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net Vout_BQ Between Pad D3-1(3970.661mil,1241mil) on Top Layer And Pad C25-2(4237.433mil,1293mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net Vout_BQ Between Pad C25-2(4237.433mil,1293mil) on Top Layer And Pad R23-1(5466mil,99.599mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net VBAT Between Pad U6-2(1402.146mil,1670.779mil) on Top Layer And Pad C26-1(2887.567mil,1293mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad R20-1(2653mil,1241.504mil) on Top Layer And Pad C26-2(2958.433mil,1293mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C28-1(943.823mil,522.795mil) on Top Layer And Via (1140mil,551.662mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C30-1(2445mil,86.457mil) on Top Layer And Pad C31-1(2668.457mil,137mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad TP25-1(2438mil,472mil) on Top Layer [Unplated] And Pad C30-1(2445mil,86.457mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net 6V Between Pad C30-2(2445mil,143.543mil) on Top Layer And Pad R22-2(5696mil,174.402mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net LDO_VOUT Between Pad C31-2(2725.543mil,137mil) on Top Layer And Pad R24-1(5034mil,99.599mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C5-1(237.008mil,1786mil) on Top Layer And Via (431.315mil,1783.433mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net VOUT Between Pad C8-1(4526.299mil,176mil) on Top Layer And Pad U2-1(5263.598mil,154.528mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net VOUT Between Track (1640mil,1985mil)(1679.055mil,1985mil) on Top Layer And Pad C8-1(4526.299mil,176mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C8-2(4563.701mil,176mil) on Top Layer And Pad C9-2(4747.511mil,176mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad TP3-1(3840mil,181mil) on Top Layer [Unplated] And Pad C8-2(4563.701mil,176mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net A Between Pad R26-1(3793mil,657.598mil) on Top Layer And Pad C9-1(4682.489mil,176mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net A Between Pad C9-1(4682.489mil,176mil) on Top Layer And Pad U2-5(5338.402mil,95.472mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C9-2(4747.511mil,176mil) on Top Layer And Pad R6-2(4917.496mil,176mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad D1-1(473.248mil,2027mil) on Top Layer And Track (565mil,2064.397mil)(565mil,2112mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net Vout_BQ Between Pad D4-1(3331.661mil,1241mil) on Top Layer And Pad D3-1(3970.661mil,1241mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetD3_2 Between Pad R18-2(3523mil,1304.496mil) on Top Layer And Pad D3-2(4053.339mil,1241mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net Vout_BQ Between Pad U6-11(1402.146mil,1554.637mil) on Top Layer And Pad D4-1(3331.661mil,1241mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetD4_2 Between Pad R19-2(3113mil,1304.496mil) on Top Layer And Pad D4-2(3414.339mil,1241mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad J1-10(278.165mil,2290mil) on Top Layer And Pad J1-11(317.536mil,2197.48mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad J1-10(278.165mil,2290mil) on Top Layer And Pad J1-9(406.118mil,2290mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad J1-6(561.63mil,2197.48mil) on Top Layer And Pad J1-7(601mil,2290mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad J1-6(561.63mil,2197.48mil) on Top Layer And Track (565mil,2064.397mil)(565mil,2112mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad J1-8(473.047mil,2290mil) on Top Layer And Pad J1-7(601mil,2290mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad J1-9(406.118mil,2290mil) on Top Layer And Pad J1-8(473.047mil,2290mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetL2_1 Between Pad L2-1(2489.606mil,716mil) on Top Layer And Pad U2-7(5338.402mil,134.843mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net A Between Pad L2-2(2690.394mil,716mil) on Top Layer And Pad R27-1(3563mil,656.614mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad P1-1(880mil,2210mil) on Multi-Layer And Via (928.349mil,1895.257mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net VBAT Between Pad P1-3(1080mil,2210mil) on Multi-Layer And Pad U6-3(1382.461mil,1670.779mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net 5V Between Pad P6-1(2543mil,316mil) on Multi-Layer And Pad R24-2(5034mil,174.402mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net SD_CARD_DETECT Between Pad TP7-1(3658mil,1887mil) on Top Layer [Unplated] And Pad R14-1(4123mil,1820.504mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net 3V3 Between Pad R14-2(4123mil,1883.496mil) on Top Layer And Pad TP12-1(5550mil,1606mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net 3V3 Between Pad TP6-1(3888mil,1887mil) on Top Layer [Unplated] And Pad R14-2(4123mil,1883.496mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetR18_1 Between Pad U6-9(1362.776mil,1554.637mil) on Top Layer And Pad R18-1(3523mil,1241.504mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetR19_1 Between Pad U6-7(1334.232mil,1602.865mil) on Top Layer And Pad R19-1(3113mil,1241.504mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad R21-1(2441.504mil,1303mil) on Top Layer And Pad R20-1(2653mil,1241.504mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net BQ_ILIM Between Pad U6-12(1421.831mil,1554.637mil) on Top Layer And Pad R20-2(2653mil,1304.496mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad TP21-1(2438mil,777mil) on Top Layer [Unplated] And Pad R21-1(2441.504mil,1303mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net BQ_ISET Between Pad U6-16(1450.374mil,1642.236mil) on Top Layer And Pad R21-2(2504.496mil,1303mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net VOUT Between Pad U2-8(5338.402mil,154.528mil) on Top Layer And Pad R23-2(5466mil,174.402mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net A Between Pad R27-1(3563mil,656.614mil) on Top Layer And Pad R26-1(3793mil,657.598mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net 3V3 Between Pad TP20-1(2708mil,777mil) on Top Layer [Unplated] And Pad R26-2(3793mil,732.402mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net 3V3 Between Pad R26-2(3793mil,732.402mil) on Top Layer And Pad TP6-1(3888mil,1887mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net NetR27_2 Between Pad R27-2(3563mil,733.386mil) on Top Layer And Pad U2-6(5338.402mil,115.157mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net VUSB Between Pad R3-2(479.504mil,1471mil) on Top Layer And Pad U6-13(1450.374mil,1583.18mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net BQ_BAT_TS Between Pad TP5-1(3380mil,181mil) on Top Layer [Unplated] And Pad R6-1(4854.504mil,176mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad R6-2(4917.496mil,176mil) on Top Layer And Pad U2-2(5263.598mil,134.843mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net MEM_SPI_MISO Between Pad R9-2(1517.303mil,577.646mil) on Top Layer And Pad TP9-1(2978mil,1887mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net SD_CARD_DETECT Between Pad SD1-9(1153.72mil,270.964mil) on Top Layer And Pad TP7-1(3658mil,1887mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net MEM_SPI_CLK Between Track (1436.547mil,573.504mil)(1450.858mil,573.504mil) on Top Layer And Pad TP10-1(2698mil,1887mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net FLASH_MEM_SPI_SS Between Via (982.067mil,1315mil) from Top Layer to Bottom Layer And Pad TP11-1(2438mil,1887mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net SWDIO Between Track (1619.142mil,1090mil)(1625mil,1084.142mil) on Top Layer And Pad TP14-1(4769mil,1606mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net SWCLK Between Pad U3-4(1625mil,990mil) on Multi-Layer And Pad TP15-1(4489mil,1606mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net MCU_RESET Between Track (1777.386mil,805mil)(1780mil,802.386mil) on Top Layer And Pad TP16-1(4210mil,1606mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net SCL Between Pad TP17-1(3278mil,777mil) on Top Layer [Unplated] And Pad TP22-1(3308mil,472mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net SCL Between Pad U4-9(698.602mil,720.472mil) on Top Layer And Pad TP17-1(3278mil,777mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net SDA Between Pad TP19-1(2998mil,777mil) on Top Layer [Unplated] And Pad TP23-1(3018mil,472mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net SDA Between Via (983mil,656mil) from Top Layer to Bottom Layer And Pad TP19-1(2998mil,777mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net 3V3 Between Pad TP20-1(2708mil,777mil) on Top Layer [Unplated] And Pad TP24-1(2728mil,472mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net 3V3 Between Via (1510mil,1115mil) from Top Layer to Bottom Layer And Pad TP20-1(2708mil,777mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net MCU_TX_UART_CLI Between Pad U4-43(698.602mil,1248.032mil) on Top Layer And Pad TP2-1(4280mil,181mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net MCU_RX_UART_CLI Between Pad U4-44(651.358mil,1248.032mil) on Top Layer And Pad TP4-1(3610mil,181mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net BQ_BAT_TS Between Pad U6-1(1421.831mil,1670.779mil) on Top Layer And Pad TP5-1(3380mil,181mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net MEM_SPI_MOSI Between Track (1338.217mil,605mil)(1344.075mil,599.142mil) on Top Layer And Pad TP8-1(3208mil,1887mil) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net VOUT Between Pad U2-1(5263.598mil,154.528mil) on Top Layer And Pad U2-8(5338.402mil,154.528mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad U2-3(5263.598mil,115.157mil) on Top Layer And Pad U2-2(5263.598mil,134.843mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad U2-2(5263.598mil,134.843mil) on Top Layer And Via (5301mil,140.748mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad U3-3(1575mil,990mil) on Multi-Layer And Via (1600mil,1210mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (1511.445mil,739.709mil) from Top Layer to Bottom Layer And Pad U3-9(1575mil,840mil) on Multi-Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad U4-20(1218.287mil,720.472mil) on Top Layer And Via (1387.382mil,682.627mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad U4-51(320.649mil,1248.032mil) on Top Layer And Via (364.874mil,1544.787mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad U5-5(1455mil,1932.488mil) on Top Layer And Pad U5-4(1455mil,1952.173mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad U5-5(1455mil,1932.488mil) on Top Layer And Via (1493.386mil,1942.331mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net VOUT Between Pad U5-8(1571.142mil,1971.858mil) on Top Layer And Pad U5-9(1571.142mil,1991.543mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net VOUT Between Track (1294.634mil,1964.155mil)(1302.337mil,1971.858mil) on Top Layer And Pad U5-8(1571.142mil,1971.858mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net Vout_BQ Between Pad U6-10(1382.461mil,1554.637mil) on Top Layer And Pad U6-11(1402.146mil,1554.637mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net Vout_BQ Between Pad U6-6(1334.232mil,1622.551mil) on Top Layer And Pad U6-10(1382.461mil,1554.637mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad U6-14(1450.374mil,1602.865mil) on Top Layer And Pad U6-15(1450.374mil,1622.551mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (1411.988mil,1593.023mil) from Top Layer to Bottom Layer And Pad U6-14(1450.374mil,1602.865mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net VBAT Between Pad U6-3(1382.461mil,1670.779mil) on Top Layer And Pad U6-2(1402.146mil,1670.779mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad U6-4(1362.776mil,1670.779mil) on Top Layer And Via (1372.618mil,1632.393mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad U6-5(1334.232mil,1642.236mil) on Top Layer And Via (1372.618mil,1632.393mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad U6-8(1334.232mil,1583.18mil) on Top Layer And Via (1372.618mil,1593.023mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad U7-1(944.067mil,280.118mil) on Top Layer And Via (1100.216mil,125.295mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Track (1289.216mil,1895.745mil)(1294.634mil,1901.163mil) on Top Layer And Via (1351.362mil,1909.143mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetR15_1 Between Track (1865mil,1825mil)(1890.151mil,1850.151mil) on Bottom Layer And Track (1866.698mil,1873.604mil)(1890.151mil,1850.151mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetR15_1 Between Track (1866.698mil,1873.604mil)(1890.151mil,1850.151mil) on Top Layer And Track (1966.547mil,1850.151mil)(1993.504mil,1877.108mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net 6V_out Between Track (1890.151mil,1850.151mil)(1966.547mil,1850.151mil) on Top Layer And Track (2056.496mil,1873.604mil)(2060mil,1877.108mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (1387.382mil,682.627mil) from Top Layer to Bottom Layer And Via (1511.445mil,739.709mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (1394.987mil,1882.501mil) from Top Layer to Bottom Layer And Via (1411.988mil,1632.393mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (1511.445mil,739.709mil) from Top Layer to Bottom Layer And Via (1606.28mil,567.646mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (1532.756mil,1942.331mil) from Top Layer to Bottom Layer And Via (1680mil,1873.604mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (1606.28mil,567.646mil) from Top Layer to Bottom Layer And Via (1689.142mil,472mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (64.134mil,1874mil) from Top Layer to Bottom Layer And Via (190.417mil,1786mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (64.591mil,1951mil) from Top Layer to Bottom Layer And Via (202mil,2112mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net VUSB Between Via (353.481mil,1631.708mil) from Top Layer to Bottom Layer And Via (431.315mil,1471mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (470.685mil,1783.433mil) from Top Layer to Bottom Layer And Via (928.349mil,1895.257mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (628.977mil,521.937mil) from Top Layer to Bottom Layer And Via (798.645mil,448.822mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (64.134mil,1874mil) from Top Layer to Bottom Layer And Via (64.591mil,1951mil) from Top Layer to Bottom Layer 
+Rule Violations :122
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=6mil) (Max=1000mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : SMD To Corner (Distance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : SMD To Plane Constraint (Distance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : SMD Neck-Down Constraint (Percent=90%) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=6mil) (All)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1372.618mil,1593.023mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1372.618mil,1632.393mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1392.303mil,1612.708mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1411.988mil,1593.023mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1411.988mil,1632.393mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1493.386mil,1942.331mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1493.386mil,2001.386mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1513.071mil,1971.858mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1532.756mil,1942.331mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1532.756mil,2001.386mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (431.315mil,1712.567mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (431.315mil,1748mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (431.315mil,1783.433mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (470.685mil,1712.567mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (470.685mil,1748mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (470.685mil,1783.433mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (5301mil,109.252mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (5301mil,140.748mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+Rule Violations :18
+
+Processing Rule : Acute Angle Constraint [Tracks Only] (Minimum=60.000) (All)
+   Violation between Acute Angle Constraint: (45.000 < 60.000) Between Track (1571.142mil,1932.488mil)(1653.406mil,1932.488mil) on Top Layer And Track (1633.721mil,1952.173mil)(1653.406mil,1932.488mil) on Top Layer (Angle = 45.000)
+   Violation between Acute Angle Constraint: (45.000 < 60.000) Between Track (1786.654mil,1942.331mil)(1786.654mil,1989.352mil) on Top Layer And Track (1786.654mil,1989.352mil)(1800.945mil,1975.061mil) on Top Layer (Angle = 45.000)
+   Violation between Acute Angle Constraint: (45.000 < 60.000) Between Track (470.449mil,1932.488mil)(485.15mil,1917.787mil) on Top Layer And Track (485.15mil,1917.787mil)(485.15mil,1959.685mil) on Top Layer (Angle = 45.000)
+   Violation between Acute Angle Constraint: (45.000 < 60.000) Between Track (334.481mil,1597.985mil)(334.481mil,1715.096mil) on Top Layer And Track (334.481mil,1597.985mil)(349.204mil,1612.708mil) on Top Layer (Angle = 45.000)
+Rule Violations :4
+
+Processing Rule : Hole Size Constraint (Min=8mil) (Max=150mil) (All)
+   Violation between Hole Size Constraint: (7.874mil < 8mil) Via (1372.618mil,1593.023mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 8mil) Via (1372.618mil,1632.393mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 8mil) Via (1392.303mil,1612.708mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 8mil) Via (1411.988mil,1593.023mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 8mil) Via (1411.988mil,1632.393mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 8mil) Via (1493.386mil,1942.331mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 8mil) Via (1493.386mil,2001.386mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 8mil) Via (1513.071mil,1971.858mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 8mil) Via (1532.756mil,1942.331mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 8mil) Via (1532.756mil,2001.386mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 8mil) Via (431.315mil,1712.567mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 8mil) Via (431.315mil,1748mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 8mil) Via (431.315mil,1783.433mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 8mil) Via (470.685mil,1712.567mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 8mil) Via (470.685mil,1748mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 8mil) Via (470.685mil,1783.433mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 8mil) Via (5301mil,109.252mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+   Violation between Hole Size Constraint: (7.874mil < 8mil) Via (5301mil,140.748mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil
+Rule Violations :18
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=2mil) (All),(All)
+   Violation between Minimum Solder Mask Sliver Constraint: (0.154mil < 2mil) Between Via (1372.618mil,1593.023mil) from Top Layer to Bottom Layer And Via (1392.303mil,1612.708mil) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [0.154mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.154mil < 2mil) Between Via (1372.618mil,1632.393mil) from Top Layer to Bottom Layer And Via (1392.303mil,1612.708mil) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [0.154mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.154mil < 2mil) Between Via (1392.303mil,1612.708mil) from Top Layer to Bottom Layer And Via (1411.988mil,1593.023mil) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [0.154mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.154mil < 2mil) Between Via (1392.303mil,1612.708mil) from Top Layer to Bottom Layer And Via (1411.988mil,1632.393mil) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [0.154mil]
+Rule Violations :4
+
+Processing Rule : Silk To Solder Mask (Clearance=2mil) (IsPad),(All)
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C10-1(533.248mil,620.858mil) on Top Layer And Text "C29" (472mil,597mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C10-2(604.114mil,620.858mil) on Top Layer And Text "C29" (472mil,597mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C10-2(604.114mil,620.858mil) on Top Layer And Text "U8" (577mil,532mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C11-1(1435.433mil,780mil) on Top Layer And Text "C15" (1367mil,695mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C11-1(1435.433mil,780mil) on Top Layer And Text "R10" (1434mil,699mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C11-2(1364.567mil,780mil) on Top Layer And Text "C15" (1367mil,695mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C12-2(1705mil,678mil) on Top Layer And Text "B1" (1717mil,633mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C13-1(1554.657mil,1175mil) on Top Layer And Text "U3" (1537mil,1098mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C14-1(1554.657mil,1248.032mil) on Top Layer And Text "C13" (1473mil,1236mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C14-2(1491.665mil,1248.032mil) on Top Layer And Text "C13" (1473mil,1236mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C2-2(317.536mil,2112mil) on Top Layer And Text "D1" (337.536mil,2010mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C2-2(317.536mil,2112mil) on Top Layer And Text "FB1" (295mil,2102mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C22-1(2673mil,563.504mil) on Top Layer And Track (2442.362mil,574.268mil)(2737.638mil,574.268mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C23-1(2443mil,563.504mil) on Top Layer And Text "TP25" (2422.5mil,527.5mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C23-1(2443mil,563.504mil) on Top Layer And Track (2442.362mil,574.268mil)(2442.362mil,656.945mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C23-1(2443mil,563.504mil) on Top Layer And Track (2442.362mil,574.268mil)(2737.638mil,574.268mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C23-2(2443mil,626.496mil) on Top Layer And Track (2442.362mil,574.268mil)(2442.362mil,656.945mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C27-2(856.823mil,451.929mil) on Top Layer And Text "U7" (835mil,428mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C28-2(943.823mil,451.929mil) on Top Layer And Text "U7" (835mil,428mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C29-1(504mil,454mil) on Top Layer And Text "R31" (483mil,440mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C29-2(504mil,524.866mil) on Top Layer And Text "R31" (483mil,440mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C30-1(2445mil,86.457mil) on Top Layer And Track (2417.803mil,66mil)(2417.803mil,366mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C30-1(2445mil,86.457mil) on Top Layer And Track (2417.803mil,66mil)(2643mil,66mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C30-2(2445mil,143.543mil) on Top Layer And Text "FD1" (2436mil,148mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C30-2(2445mil,143.543mil) on Top Layer And Track (2417.803mil,66mil)(2417.803mil,366mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C3-1(116.134mil,1951mil) on Top Layer And Text "C4" (83mil,1944mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.85mil < 2mil) Between Pad C31-1(2668.457mil,137mil) on Top Layer And Track (2643mil,66mil)(2643mil,366mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.85mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C3-2(179.126mil,1951mil) on Top Layer And Text "C4" (83mil,1944mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C5-1(237.008mil,1786mil) on Top Layer And Text "C7" (224mil,1764mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C5-2(300mil,1786mil) on Top Layer And Text "C7" (224mil,1764mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C5-2(300mil,1786mil) on Top Layer And Text "U1" (353.15mil,1700.291mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C7-1(242.077mil,1703.709mil) on Top Layer And Text "R5" (159mil,1692mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C7-2(305.069mil,1703.709mil) on Top Layer And Text "R4" (275.847mil,1629.191mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad C7-2(305.069mil,1703.709mil) on Top Layer And Text "U1" (353.15mil,1700.291mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad D1-3(394.508mil,2093.929mil) on Top Layer And Text "FB1" (295mil,2102mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad D2-1(1902.52mil,1989.352mil) on Top Layer And Text "R16" (1737mil,1934mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad D2-2(2060mil,1989.352mil) on Top Layer And Text "R15" (1975mil,1938mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad D5-1(540.571mil,1537.603mil) on Top Layer And Text "R3" (461mil,1532mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad D5-2(540.571mil,1620.281mil) on Top Layer And Text "R3" (461mil,1532mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (1.96mil < 2mil) Between Pad DS1-1(1081.453mil,263.472mil) on Top Layer And Text "R7" (959mil,186mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [1.96mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad FB1-1(315mil,2040mil) on Top Layer And Text "D1" (337.536mil,2010mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad FB1-2(315mil,1937.638mil) on Top Layer And Text "C5" (218mil,1847mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad FB1-2(315mil,1937.638mil) on Top Layer And Text "R1" (353.685mil,1839.291mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad FD1-(2476mil,68mil) on Top Layer And Track (2417.803mil,66mil)(2643mil,66mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad J1-1(388.402mil,2184.685mil) on Top Layer And Text "FB1" (295mil,2102mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad J1-11(317.536mil,2197.48mil) on Top Layer And Text "C2" (236mil,2173mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad J1-11(317.536mil,2197.48mil) on Top Layer And Text "FB1" (295mil,2102mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad J1-2(413.992mil,2184.685mil) on Top Layer And Text "FB1" (295mil,2102mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (1.751mil < 2mil) Between Pad J1-3(439.583mil,2184.685mil) on Top Layer And Text "FB1" (295mil,2102mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [1.751mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad J1-6(561.63mil,2197.48mil) on Top Layer And Text "C6" (541mil,2120mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad L1-2(1786.654mil,2036.99mil) on Top Layer And Text "R16" (1737mil,1934mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad L2-1(2489.606mil,716mil) on Top Layer And Text "C23" (2422.5mil,685.5mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad L2-2(2690.394mil,716mil) on Top Layer And Text "C22" (2652.5mil,685.5mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad P6-2(2543mil,216mil) on Multi-Layer And Text "C30" (2422.5mil,199.5mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad P6-2(2543mil,216mil) on Multi-Layer And Text "FD1" (2436mil,148mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad P6-3(2543mil,116mil) on Multi-Layer And Text "FD1" (2436mil,148mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad R12-1(1780mil,644.902mil) on Top Layer And Text "B1" (1717mil,633mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad R12-2(1780mil,707.894mil) on Top Layer And Text "B1" (1717mil,633mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad R13-1(1090mil,492mil) on Top Layer And Text "R32" (1001mil,509mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad R13-2(1090mil,429.008mil) on Top Layer And Text "DS1" (1068mil,396mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad R17-1(1297.008mil,2026.929mil) on Top Layer And Text "C16" (1274mil,2023mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad R17-1(1297.008mil,2026.929mil) on Top Layer And Text "C19" (1172mil,2031mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad R17-2(1360mil,2026.929mil) on Top Layer And Text "C16" (1274mil,2023mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad R30-1(670mil,555.779mil) on Top Layer And Text "U8" (577mil,532mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad R30-2(670mil,528.22mil) on Top Layer And Text "U8" (577mil,532mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad R35-2(975.563mil,222.362mil) on Top Layer And Text "R7" (959mil,186mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad R4-2(305mil,1631.496mil) on Top Layer And Text "R4" (275.847mil,1629.191mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad SD1-1(1257.461mil,513.091mil) on Top Layer And Text "R13" (1180.01mil,535.48mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad SD1-11(1160.61mil,508.169mil) on Top Layer And Text "R13" (1180.01mil,535.48mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad SD1-11(1160.61mil,508.169mil) on Top Layer And Text "R32" (1001mil,509mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.689mil < 2mil) Between Pad TP20-1(2708mil,777mil) on Top Layer And Track (2737.638mil,775.055mil)(2737.638mil,857.732mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.689mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (1.508mil < 2mil) Between Pad TP21-1(2438mil,777mil) on Top Layer And Text "C23" (2422.5mil,685.5mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [1.508mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad TP21-1(2438mil,777mil) on Top Layer And Track (2442.362mil,775.055mil)(2442.362mil,857.732mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad TP25-1(2438mil,472mil) on Top Layer And Text "P6" (2422.5mil,431.5mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U1-13(451mil,1748mil) on Top Layer And Text "C1" (389mil,1671mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U1-13(451mil,1748mil) on Top Layer And Text "D5" (458mil,1679mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U1-4(397.85mil,1739.142mil) on Top Layer And Text "C1" (389mil,1671mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U1-5(397.85mil,1721.425mil) on Top Layer And Text "C1" (389mil,1671mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U1-6(397.85mil,1703.709mil) on Top Layer And Text "C1" (389mil,1671mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U1-7(504.15mil,1703.709mil) on Top Layer And Text "D5" (458mil,1679mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U1-8(504.15mil,1721.425mil) on Top Layer And Text "D5" (458mil,1679mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U1-9(504.15mil,1739.142mil) on Top Layer And Text "D5" (458mil,1679mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U4-20(1218.287mil,720.472mil) on Top Layer And Text "R8" (1219mil,666mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U4-5(509.626mil,720.472mil) on Top Layer And Text "C10" (509mil,691mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U4-6(556.87mil,720.472mil) on Top Layer And Text "C10" (509mil,691mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U4-7(604.114mil,720.472mil) on Top Layer And Text "C10" (509mil,691mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U4-8(651.358mil,720.472mil) on Top Layer And Text "C10" (509mil,691mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U7-1(944.067mil,280.118mil) on Top Layer And Text "R35" (894mil,283mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U7-2(912.571mil,280.118mil) on Top Layer And Text "R35" (894mil,283mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U7-3(881.075mil,280.118mil) on Top Layer And Text "R35" (894mil,283mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U8-1(708.284mil,396.441mil) on Top Layer And Text "R25" (618mil,365mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U8-2(670.095mil,396.441mil) on Top Layer And Text "R25" (618mil,365mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U8-3(631.905mil,396.441mil) on Top Layer And Text "R25" (618mil,365mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U8-5(593.716mil,451.559mil) on Top Layer And Text "R31" (483mil,440mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 2mil) Between Pad U8-6(631.905mil,451.559mil) on Top Layer And Text "R31" (483mil,440mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+Rule Violations :95
+
+Processing Rule : Silk to Silk (Clearance=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+   Violation between Net Antennae: Track (1865mil,1825mil)(1890.151mil,1850.151mil) on Bottom Layer 
+   Violation between Net Antennae: Track (1866.698mil,1873.604mil)(1890.151mil,1850.151mil) on Top Layer 
+   Violation between Net Antennae: Track (1890.151mil,1850.151mil)(1966.547mil,1850.151mil) on Top Layer 
+   Violation between Net Antennae: Track (1966.547mil,1850.151mil)(1993.504mil,1877.108mil) on Top Layer 
+   Violation between Net Antennae: Via (1140mil,551.662mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (1372.618mil,1593.023mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (1372.618mil,1632.393mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (1387.382mil,682.627mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (1392.303mil,1612.708mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (1411.988mil,1593.023mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (1411.988mil,1632.393mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (1493.386mil,1942.331mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (1493.386mil,2001.386mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (1495mil,970mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (1513.071mil,1971.858mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (1532.756mil,1942.331mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (1532.756mil,2001.386mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (1606.28mil,567.646mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (1680mil,1873.604mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (1890.151mil,1850.151mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (190.417mil,1786mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (202mil,2112mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (431.315mil,1471mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (431.315mil,1748mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (431.315mil,1783.433mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (470.685mil,1712.567mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (470.685mil,1748mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (470.685mil,1783.433mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (5301mil,109.252mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (5301mil,140.748mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (64.134mil,1874mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (64.591mil,1951mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (928.349mil,1895.257mil) from Top Layer to Bottom Layer 
+Rule Violations :33
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (OnLayer('GroundPlane')OR OnLayer('PowerPlane'))
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Arc (2543mil,391.669mil) on Top Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad C22-1(2673mil,563.504mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad C22-2(2673mil,626.496mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad C23-1(2443mil,563.504mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad C23-2(2443mil,626.496mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad C24-1(3743mil,1241.504mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad C24-2(3743mil,1304.496mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad C25-1(4166.567mil,1293mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad C25-2(4237.433mil,1293mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad C26-1(2887.567mil,1293mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad C26-2(2958.433mil,1293mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad C30-1(2445mil,86.457mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad C30-2(2445mil,143.543mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad C31-1(2668.457mil,137mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad C31-2(2725.543mil,137mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad C8-1(4526.299mil,176mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad C8-2(4563.701mil,176mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad C9-1(4682.489mil,176mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad C9-2(4747.511mil,176mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad D3-1(3970.661mil,1241mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad D3-2(4053.339mil,1241mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad D4-1(3331.661mil,1241mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad D4-2(3414.339mil,1241mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad FD1-(2476mil,68mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad FD2-(2673mil,111mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad FD3-(2904mil,111mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad L2-1(2489.606mil,716mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad L2-2(2690.394mil,716mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad P6-1(2543mil,316mil) on Multi-Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad P6-2(2543mil,216mil) on Multi-Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad P6-3(2543mil,116mil) on Multi-Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R14-1(4123mil,1820.504mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R14-2(4123mil,1883.496mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R18-1(3523mil,1241.504mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R18-2(3523mil,1304.496mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R19-1(3113mil,1241.504mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R19-2(3113mil,1304.496mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R20-1(2653mil,1241.504mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R20-2(2653mil,1304.496mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R21-1(2441.504mil,1303mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R21-2(2504.496mil,1303mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R22-1(5696mil,99.599mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R22-2(5696mil,174.402mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R23-1(5466mil,99.599mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R23-2(5466mil,174.402mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R24-1(5034mil,99.599mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R24-2(5034mil,174.402mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R26-1(3793mil,657.598mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R26-2(3793mil,732.402mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R27-1(3563mil,656.614mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R27-2(3563mil,733.386mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R6-1(4854.504mil,176mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad R6-2(4917.496mil,176mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP10-1(2698mil,1887mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP1-1(4070mil,181mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP11-1(2438mil,1887mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP12-1(5550mil,1606mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP13-1(5049mil,1606mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP14-1(4769mil,1606mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP15-1(4489mil,1606mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP16-1(4210mil,1606mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP17-1(3278mil,777mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP19-1(2998mil,777mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP20-1(2708mil,777mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP2-1(4280mil,181mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP21-1(2438mil,777mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP22-1(3308mil,472mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP23-1(3018mil,472mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP24-1(2728mil,472mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP25-1(2438mil,472mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP3-1(3840mil,181mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP4-1(3610mil,181mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP5-1(3380mil,181mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP6-1(3888mil,1887mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP7-1(3658mil,1887mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP8-1(3208mil,1887mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad TP9-1(2978mil,1887mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad U2-1(5263.598mil,154.528mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad U2-2(5263.598mil,134.843mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad U2-3(5263.598mil,115.157mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad U2-4(5263.598mil,95.472mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad U2-5(5338.402mil,95.472mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad U2-6(5338.402mil,115.157mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad U2-7(5338.402mil,134.843mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad U2-8(5338.402mil,154.528mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 20mil) Between Board Edge And Pad U2-9(5301mil,125mil) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "C22" (2652.5mil,685.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "C23" (2422.5mil,685.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "C24" (3722.5mil,1363.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "C25" (4142.5mil,1363.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "C26" (2863.5mil,1363.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "C30" (2422.5mil,199.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "C31" (2652.5mil,199.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "C8" (4494.5mil,236.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "C9" (4664.5mil,236.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "D3" (3952.5mil,1363.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "D4" (3313.5mil,1363.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "FD1" (2436mil,148mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "FD2" (2633.5mil,191.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "FD3" (2864.5mil,191.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "J1" (151.173mil,2424.685mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "L2" (2422.5mil,899.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "P1" (885mil,2355mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "P6" (2422.5mil,431.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "R14" (4102.5mil,1942.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "R18" (3502.5mil,1363.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "R19" (3092.5mil,1363.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "R20" (2632.5mil,1363.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "R21" (2422.5mil,1363.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "R22" (5667.5mil,236.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "R23" (5437.5mil,236.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "R24" (5005.5mil,236.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "R26" (3772.5mil,785.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "R27" (3542.5mil,785.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "R6" (4835.5mil,236.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP1" (4054.5mil,236.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP10" (2682.5mil,1942.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP11" (2422.5mil,1942.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP12" (5534.5mil,1661.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP13" (5033.5mil,1661.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP14" (4753.5mil,1661.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP15" (4473.5mil,1661.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP16" (4194.5mil,1661.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP17" (3262.5mil,832.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP19" (2982.5mil,832.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP2" (4264.5mil,236.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP20" (2692.5mil,832.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP21" (2422.5mil,832.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP22" (3355.036mil,445.01mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP23" (3002.5mil,527.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP24" (2712.5mil,527.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP25" (2422.5mil,527.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP3" (3824.5mil,236.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP4" (3594.5mil,236.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP5" (3364.5mil,236.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP6" (3872.5mil,1942.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP7" (3642.5mil,1942.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP8" (3192.5mil,1942.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "TP9" (2962.5mil,1942.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "U2" (5235.5mil,236.5mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Text "U4" (-31mil,1319mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (2417.803mil,366mil)(2643mil,366mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (2417.803mil,66mil)(2417.803mil,366mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (2417.803mil,66mil)(2643mil,66mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (2427.252mil,593.032mil)(2427.252mil,596.969mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (2442.362mil,574.268mil)(2442.362mil,656.945mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (2442.362mil,574.268mil)(2737.638mil,574.268mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (2442.362mil,775.055mil)(2442.362mil,857.732mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (2442.362mil,857.732mil)(2737.638mil,857.732mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (2458.748mil,593.032mil)(2458.748mil,596.969mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (2471.032mil,1287.252mil)(2474.968mil,1287.252mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (2471.032mil,1318.748mil)(2474.968mil,1318.748mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (2637.252mil,1271.032mil)(2637.252mil,1274.968mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (2643mil,66mil)(2643mil,366mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (2657.252mil,593.032mil)(2657.252mil,596.969mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (2668.748mil,1271.032mil)(2668.748mil,1274.968mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (2688.748mil,593.032mil)(2688.748mil,596.969mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (2737.638mil,574.268mil)(2737.638mil,656.945mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (2737.638mil,775.055mil)(2737.638mil,857.732mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (2921.032mil,1268.394mil)(2924.969mil,1268.394mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (2921.032mil,1317.606mil)(2924.969mil,1317.606mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (3097.252mil,1271.032mil)(3097.252mil,1274.968mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (3128.748mil,1271.032mil)(3128.748mil,1274.968mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (3356.937mil,1279.583mil)(3356.937mil,1329.583mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (3356.937mil,1279.583mil)(3381.937mil,1304.583mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (3356.937mil,1329.583mil)(3381.937mil,1304.583mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (3370.992mil,1216.394mil)(3375.008mil,1216.394mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (3370.992mil,1265.606mil)(3375.008mil,1265.606mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (3381.937mil,1279.583mil)(3381.937mil,1329.583mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (3507.252mil,1271.032mil)(3507.252mil,1274.968mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (3538.748mil,1271.032mil)(3538.748mil,1274.968mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (3727.252mil,1271.032mil)(3727.252mil,1274.969mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (3758.748mil,1271.032mil)(3758.748mil,1274.969mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (3769.378mil,693.032mil)(3769.378mil,696.969mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (3816.622mil,693.032mil)(3816.622mil,696.969mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (3995.937mil,1279.583mil)(3995.937mil,1329.583mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (3995.937mil,1279.583mil)(4020.937mil,1304.583mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (3995.937mil,1329.583mil)(4020.937mil,1304.583mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (4009.992mil,1216.394mil)(4014.008mil,1216.394mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (4009.992mil,1265.606mil)(4014.008mil,1265.606mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (4020.937mil,1279.583mil)(4020.937mil,1329.583mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (4107.252mil,1850.032mil)(4107.252mil,1853.968mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (4138.748mil,1850.032mil)(4138.748mil,1853.968mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (4200.032mil,1268.394mil)(4203.969mil,1268.394mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (4200.032mil,1317.606mil)(4203.969mil,1317.606mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (4521.378mil,151.394mil)(4568.622mil,151.394mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (4521.378mil,200.606mil)(4568.622mil,200.606mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (4657.791mil,131.587mil)(4772.209mil,131.587mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (4657.791mil,220.413mil)(4772.209mil,220.413mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (4884.032mil,160.252mil)(4887.968mil,160.252mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (4884.032mil,191.748mil)(4887.968mil,191.748mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (5010.378mil,135.032mil)(5010.378mil,138.969mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (5057.622mil,135.032mil)(5057.622mil,138.969mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (5258.677mil,170.275mil)(5284.268mil,170.275mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (5258.677mil,79.724mil)(5265.567mil,79.724mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (5336.433mil,170.275mil)(5343.323mil,170.275mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (5336.433mil,79.724mil)(5343.323mil,79.724mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (5442.378mil,135.032mil)(5442.378mil,138.969mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (5489.622mil,135.032mil)(5489.622mil,138.969mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (5672.378mil,135.032mil)(5672.378mil,138.969mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Track (5719.622mil,135.032mil)(5719.622mil,138.969mil) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Via (5301mil,109.252mil) from Top Layer to Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 10mil) Between Board Edge And Via (5301mil,140.748mil) from Top Layer to Bottom Layer 
+Rule Violations :203
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 500
+Waived Violations : 0
+Time Elapsed        : 00:00:02

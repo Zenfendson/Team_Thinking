@@ -1,0 +1,468 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD21\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2022/3/2</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">23:02:06</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///D:\Github\ESE516_A2\ESE516_PCB.PcbDoc" class="file"><acronym title="D:\Github\ESE516_A2\ESE516_PCB.PcbDoc">D:\Github\ESE516_A2\ESE516_PCB.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">36</td></tr>
+</table>
+</td>
+</table><a name="IDWJ0WQUEPI52G0CURBF0EF1ORDG4Q44XDUKG3UEUI44YAH3YUKPF"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDX4O2SR11NLMHGV5GLXDE2DLPJJ2M5GPGZNWX5VLAVK3R24NSHV5G">Clearance Constraint (Gap=6mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDA4GP3Y1UFEQYKAU2YJAPERJRRI13X0NE3PHYP4HS2LPNUW3CJDUP">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDR1GGCD5I0CRLHWQRELGWJ0CUTN5LRLGQLDOIENLWUBPTHR50KGUK">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDPL1S53TBH5G2B5KI4VXH2UFCJGHRHCBHSY02CDMQ4CWG35I5KXEI">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQLG03KRQCCKRG3G11CJEUKP2BJLFDLIF3CLMONO1SBRR5TGIWL3G">Width Constraint (Min=6mil) (Max=1000mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLTAA4YQ5LPMXC0JUZYWCOKI2WDQ1JUEDHAAG0ZLYHBLWXQZP4WKB">SMD To Corner (Distance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTP4R1V2LB2QRLJMPWTYPYDHJXEFRO0VWF5B0YBL113NSTAG1NIEM">SMD To Plane Constraint (Distance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3W3Y1RIPM5BAGGPOL1BUFKVN0MLQZ2ZKRZ4A1LKONO1E4DAYHBUE">SMD Neck-Down Constraint (Percent=90%) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHQLT4G20G5QTMLCLM5MN5JYNRGZ55FDHBGLOJGBJN34PHIVVYXLI">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDFUK4PFXNUAJTGMYQZNLECMAGEMVO3OM3ITIAZVEZDRDQ0YB2KO1B">Minimum Annular Ring (Minimum=6mil) (All)</a></td>
+<td class="column2">18</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDK3LDVSENEFLHBZ35JJE10OBTFLUXSYDASYXYGYMG32N0X2KTUYHC">Acute Angle Constraint [Tracks Only] (Minimum=60.000) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJHDGGKWXBRIMJMOEVHPUD2SVEE2KZ3APHN5VPGOOPNUTFYNWKRYB">Hole Size Constraint (Min=8mil) (Max=150mil) (All)</a></td>
+<td class="column2">18</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAHQB3WR2LMPXJID3PVNWYKRUOMDSJI4HEDT5W3NBONDXUEGXMTQD">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYNV2XVZBVLZEEDLNDWNWMWC0CCRLDBLUHVXHBOFML0L4EGJYLA3M">Minimum Solder Mask Sliver (Gap=2mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBTNUKD4LRMS4HLL2ZSKTOQYMRCYTXLSENE323BNI3N3XVXQKWN5I">Silk To Solder Mask (Clearance=2mil) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3AW50OMWBN0UMC1YCEWNP4CIAMI2NCOAJAY3F2GGACRZRTYNJ5C">Silk to Silk (Clearance=0mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHS0U3VU1QRHZOAJHBLCA2K4Y0DKADSQBOFL55INXZUURMSLXORED">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDD0GBRRW4H0HZPYP42H1PWNUHUNXJ3K52UGRA4JD02KRYOWAPIFX">Board Clearance Constraint (Gap=0mil) (OnLayer('GroundPlane')OR OnLayer('PowerPlane'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCLMPWXHZ4QE1OZKTIQ2IISR4NNU3OERDN3RS1JGYYGA2ZVDKOWK">Board Clearance Constraint (Gap=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZ12FCZJIF0Y1LKY1ECUVXPKIQCFOTCZRAX4HZBDXVBX5PIBJIOLK">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">36</td>
+</tr>
+</table><br><a name="IDFUK4PFXNUAJTGMYQZNLECMAGEMVO3OM3ITIAZVEZDRDQ0YB2KO1B"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Annular Ring (Minimum=6mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2061.69mil|Location2.X=2068.94mil|Location1.Y=6427.375mil|Location2.Y=6434.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2061.69mil|Location2.X=2068.94mil|Location1.Y=6427.375mil|Location2.Y=6434.625mil|Absolute=True">Minimum Annular Ring: (5.906mil &lt; 6mil) Via (1385.315mil,1604.11mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2061.69mil|Location2.X=2068.94mil|Location1.Y=6466.745mil|Location2.Y=6473.995mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2061.69mil|Location2.X=2068.94mil|Location1.Y=6466.745mil|Location2.Y=6473.995mil|Absolute=True">Minimum Annular Ring: (5.906mil &lt; 6mil) Via (1385.315mil,1643.48mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2081.375mil|Location2.X=2088.625mil|Location1.Y=6447.06mil|Location2.Y=6454.31mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2081.375mil|Location2.X=2088.625mil|Location1.Y=6447.06mil|Location2.Y=6454.31mil|Absolute=True">Minimum Annular Ring: (5.906mil &lt; 6mil) Via (1405mil,1623.795mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2101.06mil|Location2.X=2108.31mil|Location1.Y=6427.375mil|Location2.Y=6434.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2101.06mil|Location2.X=2108.31mil|Location1.Y=6427.375mil|Location2.Y=6434.625mil|Absolute=True">Minimum Annular Ring: (5.906mil &lt; 6mil) Via (1424.685mil,1604.11mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2101.06mil|Location2.X=2108.31mil|Location1.Y=6466.745mil|Location2.Y=6473.995mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2101.06mil|Location2.X=2108.31mil|Location1.Y=6466.745mil|Location2.Y=6473.995mil|Absolute=True">Minimum Annular Ring: (5.906mil &lt; 6mil) Via (1424.685mil,1643.48mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2119.761mil|Location2.X=2127.011mil|Location1.Y=6826.595mil|Location2.Y=6833.845mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2119.761mil|Location2.X=2127.011mil|Location1.Y=6826.595mil|Location2.Y=6833.845mil|Absolute=True">Minimum Annular Ring: (5.906mil &lt; 6mil) Via (1443.386mil,2003.331mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2119.761mil|Location2.X=2127.011mil|Location1.Y=6885.65mil|Location2.Y=6892.9mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2119.761mil|Location2.X=2127.011mil|Location1.Y=6885.65mil|Location2.Y=6892.9mil|Absolute=True">Minimum Annular Ring: (5.906mil &lt; 6mil) Via (1443.386mil,2062.386mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2139.446mil|Location2.X=2146.696mil|Location1.Y=6856.123mil|Location2.Y=6863.373mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2139.446mil|Location2.X=2146.696mil|Location1.Y=6856.123mil|Location2.Y=6863.373mil|Absolute=True">Minimum Annular Ring: (5.906mil &lt; 6mil) Via (1463.071mil,2032.858mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2159.131mil|Location2.X=2166.381mil|Location1.Y=6826.595mil|Location2.Y=6833.845mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2159.131mil|Location2.X=2166.381mil|Location1.Y=6826.595mil|Location2.Y=6833.845mil|Absolute=True">Minimum Annular Ring: (5.906mil &lt; 6mil) Via (1482.756mil,2003.331mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2159.131mil|Location2.X=2166.381mil|Location1.Y=6885.65mil|Location2.Y=6892.9mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2159.131mil|Location2.X=2166.381mil|Location1.Y=6885.65mil|Location2.Y=6892.9mil|Absolute=True">Minimum Annular Ring: (5.906mil &lt; 6mil) Via (1482.756mil,2062.386mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2445.025mil|Location2.X=2452.275mil|Location1.Y=6157.3mil|Location2.Y=6164.55mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2445.025mil|Location2.X=2452.275mil|Location1.Y=6157.3mil|Location2.Y=6164.55mil|Absolute=True">Minimum Annular Ring: (5.906mil &lt; 6mil) Via (1768.65mil,1334.035mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2445.025mil|Location2.X=2452.275mil|Location1.Y=6188.796mil|Location2.Y=6196.046mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2445.025mil|Location2.X=2452.275mil|Location1.Y=6188.796mil|Location2.Y=6196.046mil|Absolute=True">Minimum Annular Ring: (5.906mil &lt; 6mil) Via (1768.65mil,1365.531mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1107.69mil|Location2.X=1114.94mil|Location1.Y=6535.832mil|Location2.Y=6543.082mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1107.69mil|Location2.X=1114.94mil|Location1.Y=6535.832mil|Location2.Y=6543.082mil|Absolute=True">Minimum Annular Ring: (5.906mil &lt; 6mil) Via (431.315mil,1712.567mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1107.69mil|Location2.X=1114.94mil|Location1.Y=6571.265mil|Location2.Y=6578.515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1107.69mil|Location2.X=1114.94mil|Location1.Y=6571.265mil|Location2.Y=6578.515mil|Absolute=True">Minimum Annular Ring: (5.906mil &lt; 6mil) Via (431.315mil,1748mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1107.69mil|Location2.X=1114.94mil|Location1.Y=6606.698mil|Location2.Y=6613.948mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1107.69mil|Location2.X=1114.94mil|Location1.Y=6606.698mil|Location2.Y=6613.948mil|Absolute=True">Minimum Annular Ring: (5.906mil &lt; 6mil) Via (431.315mil,1783.433mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1147.06mil|Location2.X=1154.31mil|Location1.Y=6535.832mil|Location2.Y=6543.082mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1147.06mil|Location2.X=1154.31mil|Location1.Y=6535.832mil|Location2.Y=6543.082mil|Absolute=True">Minimum Annular Ring: (5.906mil &lt; 6mil) Via (470.685mil,1712.567mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1147.06mil|Location2.X=1154.31mil|Location1.Y=6571.265mil|Location2.Y=6578.515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1147.06mil|Location2.X=1154.31mil|Location1.Y=6571.265mil|Location2.Y=6578.515mil|Absolute=True">Minimum Annular Ring: (5.906mil &lt; 6mil) Via (470.685mil,1748mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1147.06mil|Location2.X=1154.31mil|Location1.Y=6606.698mil|Location2.Y=6613.948mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1147.06mil|Location2.X=1154.31mil|Location1.Y=6606.698mil|Location2.Y=6613.948mil|Absolute=True">Minimum Annular Ring: (5.906mil &lt; 6mil) Via (470.685mil,1783.433mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDJHDGGKWXBRIMJMOEVHPUD2SVEE2KZ3APHN5VPGOOPNUTFYNWKRYB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Hole Size Constraint (Min=8mil) (Max=150mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2060.753mil|Location2.X=2069.877mil|Location1.Y=6419.548mil|Location2.Y=6428.672mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2060.753mil|Location2.X=2069.877mil|Location1.Y=6419.548mil|Location2.Y=6428.672mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 8mil) Via (1385.315mil,1604.11mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2060.753mil|Location2.X=2069.877mil|Location1.Y=6458.918mil|Location2.Y=6468.042mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2060.753mil|Location2.X=2069.877mil|Location1.Y=6458.918mil|Location2.Y=6468.042mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 8mil) Via (1385.315mil,1643.48mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2080.438mil|Location2.X=2089.562mil|Location1.Y=6439.233mil|Location2.Y=6448.357mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2080.438mil|Location2.X=2089.562mil|Location1.Y=6439.233mil|Location2.Y=6448.357mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 8mil) Via (1405mil,1623.795mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2100.123mil|Location2.X=2109.247mil|Location1.Y=6419.548mil|Location2.Y=6428.672mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2100.123mil|Location2.X=2109.247mil|Location1.Y=6419.548mil|Location2.Y=6428.672mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 8mil) Via (1424.685mil,1604.11mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2100.123mil|Location2.X=2109.247mil|Location1.Y=6458.918mil|Location2.Y=6468.042mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2100.123mil|Location2.X=2109.247mil|Location1.Y=6458.918mil|Location2.Y=6468.042mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 8mil) Via (1424.685mil,1643.48mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2118.824mil|Location2.X=2127.948mil|Location1.Y=6818.769mil|Location2.Y=6827.892mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2118.824mil|Location2.X=2127.948mil|Location1.Y=6818.769mil|Location2.Y=6827.892mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 8mil) Via (1443.386mil,2003.331mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2118.824mil|Location2.X=2127.948mil|Location1.Y=6877.824mil|Location2.Y=6886.948mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2118.824mil|Location2.X=2127.948mil|Location1.Y=6877.824mil|Location2.Y=6886.948mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 8mil) Via (1443.386mil,2062.386mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2138.509mil|Location2.X=2147.633mil|Location1.Y=6848.296mil|Location2.Y=6857.42mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2138.509mil|Location2.X=2147.633mil|Location1.Y=6848.296mil|Location2.Y=6857.42mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 8mil) Via (1463.071mil,2032.858mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2158.194mil|Location2.X=2167.318mil|Location1.Y=6818.769mil|Location2.Y=6827.892mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2158.194mil|Location2.X=2167.318mil|Location1.Y=6818.769mil|Location2.Y=6827.892mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 8mil) Via (1482.756mil,2003.331mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2158.194mil|Location2.X=2167.318mil|Location1.Y=6877.824mil|Location2.Y=6886.948mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2158.194mil|Location2.X=2167.318mil|Location1.Y=6877.824mil|Location2.Y=6886.948mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 8mil) Via (1482.756mil,2062.386mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2444.088mil|Location2.X=2453.212mil|Location1.Y=6149.473mil|Location2.Y=6158.597mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2444.088mil|Location2.X=2453.212mil|Location1.Y=6149.473mil|Location2.Y=6158.597mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 8mil) Via (1768.65mil,1334.035mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2444.088mil|Location2.X=2453.212mil|Location1.Y=6180.969mil|Location2.Y=6190.093mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2444.088mil|Location2.X=2453.212mil|Location1.Y=6180.969mil|Location2.Y=6190.093mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 8mil) Via (1768.65mil,1365.531mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1106.753mil|Location2.X=1115.877mil|Location1.Y=6528.005mil|Location2.Y=6537.129mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1106.753mil|Location2.X=1115.877mil|Location1.Y=6528.005mil|Location2.Y=6537.129mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 8mil) Via (431.315mil,1712.567mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1106.753mil|Location2.X=1115.877mil|Location1.Y=6563.438mil|Location2.Y=6572.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1106.753mil|Location2.X=1115.877mil|Location1.Y=6563.438mil|Location2.Y=6572.562mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 8mil) Via (431.315mil,1748mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1106.753mil|Location2.X=1115.877mil|Location1.Y=6598.871mil|Location2.Y=6607.995mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1106.753mil|Location2.X=1115.877mil|Location1.Y=6598.871mil|Location2.Y=6607.995mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 8mil) Via (431.315mil,1783.433mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1146.123mil|Location2.X=1155.247mil|Location1.Y=6528.005mil|Location2.Y=6537.129mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1146.123mil|Location2.X=1155.247mil|Location1.Y=6528.005mil|Location2.Y=6537.129mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 8mil) Via (470.685mil,1712.567mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1146.123mil|Location2.X=1155.247mil|Location1.Y=6563.438mil|Location2.Y=6572.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1146.123mil|Location2.X=1155.247mil|Location1.Y=6563.438mil|Location2.Y=6572.562mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 8mil) Via (470.685mil,1748mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1146.123mil|Location2.X=1155.247mil|Location1.Y=6598.871mil|Location2.Y=6607.995mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Github\ESE516_A2\ESE516_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1146.123mil|Location2.X=1155.247mil|Location1.Y=6598.871mil|Location2.Y=6607.995mil|Absolute=True">Hole Size Constraint: (7.874mil &lt; 8mil) Via (470.685mil,1783.433mil) from Top Layer to Bottom Layer Actual Hole Size = 7.874mil</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
